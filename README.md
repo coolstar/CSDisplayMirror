@@ -8,3 +8,5 @@ Contains a demo project with a basic web browser to show of the display mirrorin
 ![Image](https://raw.github.com/coolstar/CSDisplayMirror/master/mirror.png)
 
 Made on June 29, 2013 for the Objective-C Hackathon.
+
+Licenced under the MIT License. Not allowed for use in Commercial apps without written consent from coolstar.
