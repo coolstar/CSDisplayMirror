@@ -5,4 +5,4 @@ An Objective C class that allows you to quickly mirror your app's screen. Warnin
 
 Contains a demo project with a basic web browser to show of the display mirroring capabilities.
 
-![Image](../blob/master/mirror.png?raw=true)
+![Image](https://raw.github.com/coolstar/CSDisplayMirror/master/mirror.png)
