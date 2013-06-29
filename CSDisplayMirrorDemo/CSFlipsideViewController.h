@@ -19,5 +19,6 @@
 @property (assign, nonatomic) id <CSFlipsideViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
+- (IBAction)startDisplaying:(id)sender;
 
 @end

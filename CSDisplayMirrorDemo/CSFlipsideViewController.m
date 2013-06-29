@@ -7,6 +7,7 @@
 //
 
 #import "CSFlipsideViewController.h"
+#import "CSDisplayMirror.h"
 
 @interface CSFlipsideViewController ()
 
@@ -40,6 +41,10 @@
 - (IBAction)done:(id)sender
 {
     [self.delegate flipsideViewControllerDidFinish:self];
+}
+
+- (IBAction)startDisplaying:(id)sender {
+    [[[CSDisplayMirror alloc] init] setupScreenMirroring];
 }
 
 @end

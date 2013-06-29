@@ -18,9 +18,11 @@
 		F1FE16A6177F78670085F010 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16A5177F78670085F010 /* Default-568h@2x.png */; };
 		F1FE16A9177F78670085F010 /* CSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE16A8177F78670085F010 /* CSMainViewController.m */; };
 		F1FE16AC177F78670085F010 /* CSFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE16AB177F78670085F010 /* CSFlipsideViewController.m */; };
-		F1FE16AF177F78670085F010 /* CSMainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16AD177F78670085F010 /* CSMainViewController_iPhone.xib */; };
-		F1FE16B2177F78670085F010 /* CSMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16B0177F78670085F010 /* CSMainViewController_iPad.xib */; };
+		F1FE16AF177F78670085F010 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16AD177F78670085F010 /* CSMainViewController.xib */; };
 		F1FE16B5177F78670085F010 /* CSFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16B3177F78670085F010 /* CSFlipsideViewController.xib */; };
+		F1FE16BF177F789C0085F010 /* CSDisplayMirror.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE16BE177F789C0085F010 /* CSDisplayMirror.m */; };
+		F1FE16C1177F7C980085F010 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FE16C0177F7C980085F010 /* QuartzCore.framework */; };
+		F1FE16C3177F9AF40085F010 /* mirror.png in Resources */ = {isa = PBXBuildFile; fileRef = F1FE16C2177F9AF40085F010 /* mirror.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +43,12 @@
 		F1FE16A8177F78670085F010 /* CSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMainViewController.m; sourceTree = "<group>"; };
 		F1FE16AA177F78670085F010 /* CSFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSFlipsideViewController.h; sourceTree = "<group>"; };
 		F1FE16AB177F78670085F010 /* CSFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSFlipsideViewController.m; sourceTree = "<group>"; };
-		F1FE16AE177F78670085F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CSMainViewController_iPhone.xib; sourceTree = "<group>"; };
-		F1FE16B1177F78670085F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CSMainViewController_iPad.xib; sourceTree = "<group>"; };
+		F1FE16AE177F78670085F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CSMainViewController.xib; sourceTree = "<group>"; };
 		F1FE16B4177F78670085F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CSFlipsideViewController.xib; sourceTree = "<group>"; };
+		F1FE16BD177F789C0085F010 /* CSDisplayMirror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDisplayMirror.h; sourceTree = SOURCE_ROOT; };
+		F1FE16BE177F789C0085F010 /* CSDisplayMirror.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDisplayMirror.m; sourceTree = SOURCE_ROOT; };
+		F1FE16C0177F7C980085F010 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F1FE16C2177F9AF40085F010 /* mirror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirror.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FE16C1177F7C980085F010 /* QuartzCore.framework in Frameworks */,
 				F1FE1690177F78660085F010 /* UIKit.framework in Frameworks */,
 				F1FE1692177F78660085F010 /* Foundation.framework in Frameworks */,
 				F1FE1694177F78660085F010 /* CoreGraphics.framework in Frameworks */,
@@ -63,6 +69,7 @@
 		F1FE1683177F78660085F010 = {
 			isa = PBXGroup;
 			children = (
+				F1FE16C0177F7C980085F010 /* QuartzCore.framework */,
 				F1FE1695177F78660085F010 /* CSDisplayMirrorDemo */,
 				F1FE168E177F78660085F010 /* Frameworks */,
 				F1FE168D177F78660085F010 /* Products */,
@@ -96,8 +103,7 @@
 				F1FE16A8177F78670085F010 /* CSMainViewController.m */,
 				F1FE16AA177F78670085F010 /* CSFlipsideViewController.h */,
 				F1FE16AB177F78670085F010 /* CSFlipsideViewController.m */,
-				F1FE16AD177F78670085F010 /* CSMainViewController_iPhone.xib */,
-				F1FE16B0177F78670085F010 /* CSMainViewController_iPad.xib */,
+				F1FE16AD177F78670085F010 /* CSMainViewController.xib */,
 				F1FE16B3177F78670085F010 /* CSFlipsideViewController.xib */,
 				F1FE1696177F78660085F010 /* Supporting Files */,
 			);
@@ -107,10 +113,13 @@
 		F1FE1696177F78660085F010 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1FE16BD177F789C0085F010 /* CSDisplayMirror.h */,
+				F1FE16BE177F789C0085F010 /* CSDisplayMirror.m */,
 				F1FE1697177F78660085F010 /* CSDisplayMirrorDemo-Info.plist */,
 				F1FE1698177F78660085F010 /* InfoPlist.strings */,
 				F1FE169B177F78660085F010 /* main.m */,
 				F1FE169D177F78660085F010 /* CSDisplayMirrorDemo-Prefix.pch */,
+				F1FE16C2177F9AF40085F010 /* mirror.png */,
 				F1FE16A1177F78660085F010 /* Default.png */,
 				F1FE16A3177F78660085F010 /* Default@2x.png */,
 				F1FE16A5177F78670085F010 /* Default-568h@2x.png */,
@@ -174,9 +183,9 @@
 				F1FE16A2177F78660085F010 /* Default.png in Resources */,
 				F1FE16A4177F78660085F010 /* Default@2x.png in Resources */,
 				F1FE16A6177F78670085F010 /* Default-568h@2x.png in Resources */,
-				F1FE16AF177F78670085F010 /* CSMainViewController_iPhone.xib in Resources */,
-				F1FE16B2177F78670085F010 /* CSMainViewController_iPad.xib in Resources */,
+				F1FE16AF177F78670085F010 /* CSMainViewController.xib in Resources */,
 				F1FE16B5177F78670085F010 /* CSFlipsideViewController.xib in Resources */,
+				F1FE16C3177F9AF40085F010 /* mirror.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				F1FE16A0177F78660085F010 /* CSAppDelegate.m in Sources */,
 				F1FE16A9177F78670085F010 /* CSMainViewController.m in Sources */,
 				F1FE16AC177F78670085F010 /* CSFlipsideViewController.m in Sources */,
+				F1FE16BF177F789C0085F010 /* CSDisplayMirror.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,20 +215,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F1FE16AD177F78670085F010 /* CSMainViewController_iPhone.xib */ = {
+		F1FE16AD177F78670085F010 /* CSMainViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F1FE16AE177F78670085F010 /* en */,
 			);
-			name = CSMainViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		F1FE16B0177F78670085F010 /* CSMainViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1FE16B1177F78670085F010 /* en */,
-			);
-			name = CSMainViewController_iPad.xib;
+			name = CSMainViewController.xib;
 			sourceTree = "<group>";
 		};
 		F1FE16B3177F78670085F010 /* CSFlipsideViewController.xib */ = {
@@ -295,6 +297,7 @@
 				GCC_PREFIX_HEADER = "CSDisplayMirrorDemo/CSDisplayMirrorDemo-Prefix.pch";
 				INFOPLIST_FILE = "CSDisplayMirrorDemo/CSDisplayMirrorDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -306,6 +309,7 @@
 				GCC_PREFIX_HEADER = "CSDisplayMirrorDemo/CSDisplayMirrorDemo-Prefix.pch";
 				INFOPLIST_FILE = "CSDisplayMirrorDemo/CSDisplayMirrorDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -329,6 +333,7 @@
 				F1FE16BA177F78670085F010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
